@@ -8,11 +8,6 @@ require("./config/db");
 
 
 
-app.get("/", (req, res) => {
-  res.send("Welcome to MentorHub Backend API 🚀");
-});
-
-
 
 
 
@@ -32,6 +27,15 @@ app.use(express.urlencoded({ extended: true }));
 
 // Middleware to parse cookies from the incoming requests
 app.use(cookieParser());
+
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to MentorHub Backend API 🚀");
+});
+
+
+
 
 // Use the routes with a prefix defined in the config file
 app.use(config.PREFIX, routes);
