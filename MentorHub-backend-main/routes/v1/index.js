@@ -11,7 +11,21 @@ const mentorRoute = require("./mentor.route");
 const bookingRoute = require("./booking.route");
 const webhookRoute = require("./webhook.route");
 
+
+
+
+  router.get("/", (req, res) => {
+  res.send({ success: true, message: "Backend is running 🚀" });
+});
+
+
+
+
+
 const Routes = [
+
+
+
   {
     path: "/",
     route: homeRoute,
