@@ -13,10 +13,10 @@ const webhookRoute = require("./webhook.route");
 
 
 
-
-  router.get("/", (req, res) => {
-  res.send({ success: true, message: "Backend is running 🚀" });
+app.get("/", (req, res) => {
+  res.send("Welcome to MentorHub Backend API 🚀");
 });
+
 
 
 
