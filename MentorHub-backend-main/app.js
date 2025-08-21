@@ -6,6 +6,16 @@ const cookieParser = require("cookie-parser");
 const app = express();
 require("./config/db");
 
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to MentorHub Backend API 🚀");
+});
+
+
+
+
+
 // Import routes and configuration files
 const routes = require("./routes/v1");
 const config = require("./config");

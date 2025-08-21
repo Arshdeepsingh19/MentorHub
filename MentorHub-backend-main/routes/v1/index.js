@@ -13,10 +13,6 @@ const webhookRoute = require("./webhook.route");
 
 
 
-app.get("/", (req, res) => {
-  res.send("Welcome to MentorHub Backend API 🚀");
-});
-
 
 
 
