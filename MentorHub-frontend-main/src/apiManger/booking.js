@@ -1,13 +1,13 @@
 import AxiosInstances from ".";
 
 const bookService = async (data) => {
-  return await AxiosInstances.post("/booking/initiate-booking", data);
+  return await AxiosInstances.post("v1/booking/initiate-booking", data);
 };
 const getMentorBookings = async () => {
-  return await AxiosInstances.get("/booking/mentor");
+  return await AxiosInstances.get("v1/booking/mentor");
 };
 const getStudentBookigs = async () => {
-  return await AxiosInstances.get("/booking/");
+  return await AxiosInstances.get("v1/booking/");
 };
 
 const booking = {

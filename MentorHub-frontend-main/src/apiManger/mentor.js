@@ -2,11 +2,11 @@ import AxiosInstances from ".";
 
 // Define the functions
 const getAllMentors = () => {
-  return AxiosInstances.get("/mentor");
+  return AxiosInstances.get("v1/mentor");
 };
 
 const getMentorByUsername = (userName) => {
-  return AxiosInstances.get("/mentor/" + userName);
+  return AxiosInstances.get("v1/mentor/" + userName);
 };
 
 // Assign the object to a variable

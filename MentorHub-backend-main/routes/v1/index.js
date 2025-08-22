@@ -15,10 +15,7 @@ const webhookRoute = require("./webhook.route");
 
 
 
-
-
-
-const Routes = [
+const routes = [
 
 
 

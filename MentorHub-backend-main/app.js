@@ -9,8 +9,6 @@ require("./config/db");
 
 
 
-
-
 // Import routes and configuration files
 const routes = require("./routes/v1");
 const config = require("./config");

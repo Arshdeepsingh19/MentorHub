@@ -33,7 +33,7 @@ let AxiosInstances; // Declare a variable to hold the axios instance
           // If the error status is 401 (Unauthorized)
           removeToken(); // Remove the token from storage
           sessionStorage.removeItem(USER_STORE_PERSIST); // Remove user data from session storage
-          window.location.href = "/signin"; // Redirect to the signin page
+          window.location.href = "v1/signin"; // Redirect to the signin page
         }
       } else {
         toast.error("Something went wrong"); // Display a generic error message
